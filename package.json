@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "A collection of Node web application utilities for the Meetup web platform",
   "engines": {
-    "node": "^10.22.1",
-    "yarn": "^1.9.4"
+    "node": "^10.24.1",
+    "yarn": "^1.22.10"
   },
   "main": "./lib/index.js",
   "config": {
