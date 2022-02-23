@@ -35,7 +35,7 @@
     "mwp-logger-plugin": ">=0.0.1",
     "mwp-router": ">=0.0.1",
     "mwp-store": ">=0.0.1",
-    "node-fetch": "1.7.2",
+    "node-fetch": "2.6.1",
     "pino": "4.7.1",
     "qs": "6.7.0"
   },
