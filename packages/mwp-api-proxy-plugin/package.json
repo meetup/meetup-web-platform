@@ -33,7 +33,7 @@
     "mwp-auth-plugin": ">=0.0.1",
     "mwp-config": ">=0.0.1",
     "mwp-logger-plugin": ">=0.0.1",
-    "qs": "6.7.0",
+    "qs": "6.7.3",
     "request": "2.88.0",
     "rison": "0.1.1"
   },
