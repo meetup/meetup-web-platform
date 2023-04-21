@@ -154,7 +154,7 @@ const getRouterRenderer = async ({
 		url?: string,
 		permanent?: boolean,
 	} = {};
-	console.log('about to render app markup');
+
 	try {
 		appMarkup = await renderToStringWithData(
 			<ServerApp
@@ -173,7 +173,7 @@ const getRouterRenderer = async ({
 		// now we can re-throw and let the caller handle the error
 		throw err;
 	}
-	console.log('appMarkup', appMarkup);
+
 	const sideEffects = resolveSideEffects();
 
 	const externalRedirect = getRedirect(sideEffects.redirect);
