@@ -12,10 +12,10 @@ describe('set', () => {
 		set('foo', 'fooValue', OPT_DEFAULT);
 		expect(jsCookie.set).toHaveBeenCalled();
 		expect(jsCookie.set.mock.calls[0]).toMatchInlineSnapshot(`
-		Array [
+		[
 		  "foo",
 		  "fooValue",
-		  Object {
+		  {
 		    "domain": ".meetup.com",
 		    "path": "/",
 		    "secure": true,

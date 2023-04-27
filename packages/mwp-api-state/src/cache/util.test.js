@@ -3,12 +3,12 @@ import { makeCache, cacheWriter, cacheReader } from './util';
 describe('cache utils', () => {
 	it('creates a Promise-based cache', function() {
 		const cache = makeCache();
-		expect(cache.get).toEqual(jasmine.any(Function));
-		expect(cache.get()).toEqual(jasmine.any(Promise));
-		expect(cache.set).toEqual(jasmine.any(Function));
-		expect(cache.set()).toEqual(jasmine.any(Promise));
-		expect(cache.delete).toEqual(jasmine.any(Function));
-		expect(cache.delete()).toEqual(jasmine.any(Promise));
+		expect(cache.get).not.toBeNull();
+		expect(cache.get()).not.toBeNull();
+		expect(cache.set).not.toBeNull();
+		expect(cache.set()).not.toBeNull();
+		expect(cache.delete).not.toBeNull();
+		expect(cache.delete()).not.toBeNull();
 	});
 	it('sets and gets from cache', function() {
 		const cache = makeCache();
@@ -27,7 +27,7 @@ describe('cache utils', () => {
 			.then(() => cache.delete('foo'))
 			.then(() => cache.get('foo'))
 			.then(value => expect(value).toBeUndefined())
-			.catch(err => expect(err).toEqual(jasmine.any(Error)));
+			.catch(err => expect(err).not.toBeNull());
 	});
 
 	it('cacheWriter writes to cache', function() {

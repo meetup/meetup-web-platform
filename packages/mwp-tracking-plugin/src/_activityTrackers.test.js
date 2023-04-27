@@ -20,12 +20,12 @@ describe('getTrackActivity', () => {
 		};
 		trackActivity(request)(fields);
 		expect(trackApiResponses.mock.calls[0][0]).toMatchInlineSnapshot(`
-Object {
-  "foo": "bar",
-  "referrer": "http://www.previous.com/bar",
-  "url": "/foo?bar=baz",
-}
-`);
+		{
+		  "foo": "bar",
+		  "referrer": "http://www.previous.com/bar",
+		  "url": "/foo?bar=baz",
+		}
+	`);
 	});
 	test('custom getFields', () => {
 		trackApiResponses.mockClear();

@@ -1,9 +1,14 @@
 import catchMiddleware from './catch';
 
 describe('catchMiddleware', () => {
+	let consoleMock;
+	beforeEach(() => {
+		consoleMock = jest.spyOn(console, 'error');
+	});
+	afterEach(() => {
+		consoleMock.mockRestore();
+	});
 	it('logs an error when the `next` function throws an error', () => {
-		spyOn(console, 'error');
-
 		const theError = new Error('bad news');
 		const errorThrower = () => {
 			throw theError;
@@ -13,8 +18,6 @@ describe('catchMiddleware', () => {
 		expect(receivedError).toBe(theError);
 	});
 	it('does nothing when the store operates normally (no errors)', () => {
-		spyOn(console, 'error');
-
 		const action = { foo: 'bar' };
 		const next = x => x;
 		const receivedError = catchMiddleware(console.error)()(next)(action);

@@ -3,7 +3,7 @@
 exports[`connectWithMatchMedia exists 1`] = `
 <ConnectWithMatchMedia(TestComponent)
   media={
-    Object {
+    {
       "isAtSmallUp": true,
     }
   }

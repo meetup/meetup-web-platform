@@ -20,7 +20,7 @@ Activity {
   "standardized_url": null,
   "subViewName": "foo subview",
   "trackId": "foo",
-  "trax": Object {},
+  "trax": {},
   "url": "asdf",
   "viewName": "foo view",
 }

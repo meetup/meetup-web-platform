@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getExternalRequestOpts returns the expected object from a multipart request 1`] = `
-Object {
-  "agentOptions": Object {
+{
+  "agentOptions": {
     "rejectUnauthorized": false,
   },
   "baseUrl": "https://api.dev.meetup.com",
-  "formData": Object {
+  "formData": {
     "foo": "bar",
   },
-  "headers": Object {
+  "headers": {
     "accept-language": "en-US",
     "cookie": "MEETUP_MEMBER_DEV=foo member; MEETUP_CSRF_DEV=bar token",
     "csrf-token": "bar token",
@@ -24,12 +24,12 @@ Object {
 `;
 
 exports[`getExternalRequestOpts returns the expected object from a vanilla request 1`] = `
-Object {
-  "agentOptions": Object {
+{
+  "agentOptions": {
     "rejectUnauthorized": false,
   },
   "baseUrl": "https://api.dev.meetup.com",
-  "headers": Object {
+  "headers": {
     "accept-language": "en-US",
     "cookie": "MEETUP_MEMBER_DEV=foo member; MEETUP_CSRF_DEV=bar token",
     "csrf-token": "bar token",

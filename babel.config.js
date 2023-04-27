@@ -15,5 +15,6 @@ module.exports = {
 		'babel-plugin-dynamic-import-node',
 		'@babel/plugin-transform-runtime',
 		'@babel/plugin-proposal-class-properties',
+		
 	],
 };

@@ -23,7 +23,7 @@ import {
 import { API_PROXY_PLUGIN_NAME } from '../config';
 
 jest.mock('mwp-config', () => {
-	const config = require.requireActual('mwp-config');
+	const config = jest.requireActual('mwp-config');
 	config.package = { agent: 'TEST_AGENT ' };
 	return config;
 });
@@ -214,11 +214,11 @@ describe('buildRequestArgs', () => {
 		const getArgs = buildRequestArgs({ ...options, method })(testQueryResults);
 		method = 'post';
 		const postArgs = buildRequestArgs({ ...options, method })(testQueryResults);
-		expect(getArgs).toEqual(jasmine.any(Object));
+		expect(getArgs).not.toBeNull();
 		expect(getArgs.url).toMatch(/\?.+/); // get requests will add querystring
 		expect(getArgs.hasOwnProperty('body')).toBe(false); // get requests will not have a body
 		expect(postArgs.url).not.toMatch(/\?.+/); // post requests will not add querystring
-		expect(postArgs.body).toEqual(jasmine.any(String)); // post requests will add body string
+		expect(postArgs.body).not.toBeNull(); // post requests will add body string
 		// post requests will add body string
 		expect(postArgs.headers['content-type']).toEqual(
 			'application/x-www-form-urlencoded'

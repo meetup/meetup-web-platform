@@ -1,4 +1,4 @@
-const actual_request = require.requireActual('request');
+const actual_request = jest.requireActual('request');
 /**
  * Jest will automatically apply this mock for every call to the `request`
  * package when running tests. This means that the network will not be hit by

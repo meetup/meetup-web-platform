@@ -39,7 +39,7 @@ describe.skip('trackStopPropagation', () => {
 		const spyable = {
 			dummyListener() {},
 		};
-		spyOn(spyable, 'dummyListener');
+		jest.spyOn(spyable, 'dummyListener');
 		clickParser.trackStopPropagation(spyable.dummyListener);
 		const evt = document.createEvent('HTMLEvents');
 		evt.initEvent('click', false, true);
@@ -52,7 +52,7 @@ describe.skip('trackStopPropagation', () => {
 			const spyable = {
 				dummyListener() {},
 			};
-			spyOn(spyable, 'dummyListener');
+			jest.spyOn(spyable, 'dummyListener');
 			clickParser.trackStopPropagation(spyable.dummyListener);
 			const evt = document.createEvent('HTMLEvents');
 			evt.initEvent('click', false, true);

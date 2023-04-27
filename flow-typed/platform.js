@@ -154,6 +154,32 @@ declare type GeoLocation = {
 	latlon?: Array<number>,
 };
 
+// See https://docs.launchdarkly.com/docs/node-sdk-reference#section-users
+declare type LaunchDarklyUser$CustomAttributes = {
+	RequestCountry?: string,
+	RequestRegion?: string,
+	[string]:
+		| string
+		| boolean
+		| number
+		| Array<string>
+		| Array<boolean>
+		| Array<number>,
+};
+
+declare type LaunchDarklyUser = {|
+	key: string,
+	ip?: string,
+	firstName?: string,
+	lastName?: string,
+	country?: string,
+	email?: string,
+	avatar?: string,
+	name?: string,
+	anonymous?: boolean,
+	custom?: LaunchDarklyUser$CustomAttributes,
+|};
+
 declare type ActivityInfo = {
 	viewName?: string,
 	subViewName?: string,

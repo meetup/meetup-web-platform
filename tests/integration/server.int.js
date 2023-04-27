@@ -12,7 +12,7 @@ describe('General server startup tests', () => {
 			handler: (request, h) => 'okay',
 		};
 		const routes = [fooRoute];
-		// spyOn(config, 'default').and.returnValue(Promise.resolve({}));
+		// jest.spyOn(config, 'default').and.returnValue(Promise.resolve({}));
 		return start({}, { routes }, mockConfig).then(returnedServer =>
 			returnedServer.stop()
 		);
@@ -28,7 +28,7 @@ describe('General server startup tests', () => {
 			handler: (request, h) => expectedResponse,
 		};
 		const routes = [fooRoute];
-		// spyOn(config, 'default').and.returnValue(Promise.resolve({}));
+		// jest.spyOn(config, 'default').and.returnValue(Promise.resolve({}));
 		return start({}, { routes }, mockConfig).then(server => {
 			const requestFooRoute = {
 				method: 'get',
@@ -52,7 +52,7 @@ describe('General server startup tests', () => {
 			handler: (request, h) => expectedResponse,
 		};
 		const routes = [fooRoute];
-		// spyOn(config, 'default').and.returnValue(Promise.resolve({}));
+		// jest.spyOn(config, 'default').and.returnValue(Promise.resolve({}));
 		return start({}, { routes }, mockConfig).then(server => {
 			const authedRequestFooRoute = {
 				method: 'get',
@@ -73,8 +73,8 @@ describe('General server startup tests', () => {
 		const spyable = {
 			handler: (request, h) => 'okay',
 		};
-		spyOn(spyable, 'handler').and.callThrough();
-		spyOn(appRouteHandler, 'default').and.callFake(() => spyable.handler);
+		jest.spyOn(spyable, 'handler').and.callThrough();
+		jest.spyOn(appRouteHandler, 'default').and.callFake(() => spyable.handler);
 		return start({}, {}, mockConfig).then(server => {
 			const request = {
 				method: 'get',
@@ -110,7 +110,7 @@ describe('Cookie setting', () => {
 			handler: (request, h) => 'okay',
 		};
 		const routes = [fooRoute];
-		// spyOn(config, 'default').and.returnValue(Promise.resolve({}));
+		// jest.spyOn(config, 'default').and.returnValue(Promise.resolve({}));
 		return start({}, { routes }, mockConfig).then(server => {
 			const avro = require('mwp-tracking-plugin/lib/util/avro');
 			avro.loggers.awsclick.mockReturnValue('mocked clicktracking log');

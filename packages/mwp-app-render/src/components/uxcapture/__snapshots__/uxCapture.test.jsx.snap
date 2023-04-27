@@ -5,18 +5,18 @@ exports[`UXCapture renders correct markup when all props are defined 1`] = `
   <_default />
   <_default
     primaryActionAvailable={
-      Array [
+      [
         "ux-primary-action-available",
       ]
     }
     primaryContentDisplayed={
-      Array [
+      [
         "ux-primary-content-1",
         "ux-primary-content-2",
       ]
     }
     secondaryContentDisplayed={
-      Array [
+      [
         "ux-secondary-content-1",
         "ux-secondary-content-2",
         "ux-secondary-content-3",

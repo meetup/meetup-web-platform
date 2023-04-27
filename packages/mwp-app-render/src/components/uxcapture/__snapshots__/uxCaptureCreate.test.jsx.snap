@@ -3,7 +3,7 @@
 exports[`UXCaptureCreate renders the correct markup when no props are provided 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {

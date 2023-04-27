@@ -14,17 +14,17 @@ describe('CookieProvider', () => {
 				</CookieProvider>
 			)
 		).toMatchInlineSnapshot(`
-						<ContextProvider
-						  value={
-						    Object {
-						      "get": [MockFunction],
-						      "set": [MockFunction],
-						    }
-						  }
-						>
-						  hi
-						</ContextProvider>
-			`);
+		<ContextProvider
+		  value={
+		    {
+		      "get": [MockFunction],
+		      "set": [MockFunction],
+		    }
+		  }
+		>
+		  hi
+		</ContextProvider>
+	`);
 	});
 });
 describe('SetCookie', () => {

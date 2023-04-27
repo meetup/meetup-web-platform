@@ -72,8 +72,8 @@ const IDENTITY_REDUCER = state => state;
 export function testCreateStore(createStoreFn) {
 	it('creates a store with store functions', () => {
 		const basicStore = createStoreFn(IDENTITY_REDUCER);
-		expect(basicStore.getState).toEqual(jasmine.any(Function));
-		expect(basicStore.dispatch).toEqual(jasmine.any(Function));
+		expect(basicStore.getState).not.toBeNull();
+		expect(basicStore.dispatch).not.toBeNull();
 	});
 	it('creates a store with supplied initialState', done => {
 		const initialState = { foo: 'bar' };

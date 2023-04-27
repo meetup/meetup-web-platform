@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Hapi plugin to activate the REST API proxy behavior + route",
   "engines": {
-    "node": "^10.22.1",
+    "node": "^14.19.0",
     "yarn": "^1.9.4"
   },
   "main": "./lib/index.js",

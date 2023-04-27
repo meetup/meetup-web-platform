@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`generateCanonicalUrlLinkTags should generate a canonical link tag with locale if *not* en-US 1`] = `
-Array [
+[
   <link
     href="http://www.mock-base-url.com/fr-FR/mockroute"
     rel="canonical"
@@ -10,7 +10,7 @@ Array [
 `;
 
 exports[`generateCanonicalUrlLinkTags should generate a canonical link tag without locale if en-US 1`] = `
-Array [
+[
   <link
     href="http://www.mock-base-url.com/mockroute"
     rel="canonical"
@@ -19,7 +19,7 @@ Array [
 `;
 
 exports[`generateCanonicalUrlLinkTags should generate a x-default url that is baseUrl + route 1`] = `
-Array [
+[
   <link
     href="http://www.mock-base-url.com/mockroute"
     hrefLang="x-default"
@@ -29,7 +29,7 @@ Array [
 `;
 
 exports[`generateCanonicalUrlLinkTags should generate locale <link />s for all locales 1`] = `
-Array [
+[
   <link
     href="http://www.mock-base-url.com/mockroute"
     rel="canonical"
@@ -173,7 +173,7 @@ Array [
 `;
 
 exports[`generateCanonicalUrlLinkTags should not generate locale <link />s when isGenerateAlternateLinks = false 1`] = `
-Array [
+[
   <link
     href="http://www.mock-base-url.com/mockroute"
     rel="canonical"

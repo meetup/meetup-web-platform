@@ -3,11 +3,11 @@
 exports[`UXCaptureInlineMark renders component markup 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 	<script>
 		if(window.UXCapture) {
-			window.UXCapture.mark(\\"foo\\");
+			window.UXCapture.mark("foo");
 		}
 	</script>
 ",

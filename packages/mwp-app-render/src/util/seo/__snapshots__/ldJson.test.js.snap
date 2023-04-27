@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`generateEventLdJson should generate a ld+json object for event 1`] = `
-Object {
+{
   "@context": "http://schema.org",
   "@type": "Event",
   "description": "The coolest event in the world during which we will run and dance and sing
-	<script>alert(\\"bad time\\")</script>, 😊, &lt;blink&gt;what what&lt;blink&gt; this is getting
+	<script>alert("bad time")</script>, 😊, &lt;blink&gt;what what&lt;blink&gt; this is getting
 	longer than it needs to be why am I still typing omg",
   "endDate": "1970-01-18T05:01-05:00",
-  "location": Object {
+  "location": {
     "@type": "Place",
-    "address": Object {
+    "address": {
       "@type": "PostalAddress",
       "addressCountry": undefined,
       "addressLocality": "city name",
@@ -18,7 +18,7 @@ Object {
       "postalCode": "00000",
       "streetAddress": "address 1 address 2 address 3",
     },
-    "geo": Object {
+    "geo": {
       "@type": "GeoCoordinates",
       "latitude": undefined,
       "longitude": undefined,
@@ -26,7 +26,7 @@ Object {
     "name": undefined,
   },
   "name": "So much fun",
-  "offers": Object {
+  "offers": {
     "@type": "Offer",
     "price": 10,
     "priceCurrency": "USD",
@@ -37,8 +37,8 @@ Object {
 `;
 
 exports[`generateFeeLdJson should generate a ld+json object for offers 1`] = `
-Object {
-  "offers": Object {
+{
+  "offers": {
     "@type": "Offer",
     "price": 11,
     "priceCurrency": "USD",
@@ -47,10 +47,10 @@ Object {
 `;
 
 exports[`generateLocationLdJson should generate a ld+json object for location 1`] = `
-Object {
-  "location": Object {
+{
+  "location": {
     "@type": "Place",
-    "address": Object {
+    "address": {
       "@type": "PostalAddress",
       "addressCountry": "usa",
       "addressLocality": "city name",
@@ -58,7 +58,7 @@ Object {
       "postalCode": "00000",
       "streetAddress": "address 1 address 2 address 3",
     },
-    "geo": Object {
+    "geo": {
       "@type": "GeoCoordinates",
       "latitude": undefined,
       "longitude": undefined,

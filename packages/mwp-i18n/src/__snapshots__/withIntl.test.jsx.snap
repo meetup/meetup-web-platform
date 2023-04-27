@@ -4,7 +4,7 @@ exports[`renders an IntlProvider-wrapped component 1`] = `
 <IntlProvider
   defaultLocale="en-US"
   messages={
-    Object {
+    {
       "foo": "bar",
     }
   }

@@ -3,9 +3,9 @@
     "version": "0.0.1",
     "description": "All the config you might ever need for a MWP app",
     "engines": {
-		"node": "^10.22.1",
-		"yarn": "^1.9.4"
-	},
+        "node": "^14.19.0",
+        "yarn": "^1.9.4"
+    },
     "config": {},
     "repository": {
         "type": "git",

@@ -3,9 +3,9 @@
 exports[`ServerApp exists 1`] = `
 <StaticRouter
   basename=""
-  context={Object {}}
+  context={{}}
   location={
-    Object {
+    {
       "hash": "",
       "pathname": "/foo",
       "search": "",
@@ -14,10 +14,10 @@ exports[`ServerApp exists 1`] = `
 >
   <Component>
     <HapiCookieProvider
-      h={Object {}}
+      h={{}}
       request={
-        Object {
-          "url": Object {
+        {
+          "url": {
             "hash": "",
             "pathname": "/foo",
             "search": "",
@@ -27,12 +27,12 @@ exports[`ServerApp exists 1`] = `
     >
       <PlatformApp
         appContext={
-          Object {
+          {
             "basename": "",
           }
         }
-        routes={Array []}
-        store={Object {}}
+        routes={[]}
+        store={{}}
       />
     </HapiCookieProvider>
   </Component>

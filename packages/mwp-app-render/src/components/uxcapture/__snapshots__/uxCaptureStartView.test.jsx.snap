@@ -3,11 +3,11 @@
 exports[`UXCaptureStartView destinationVerified renders correct markup when \`destinationVerified\` is an empty array 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -19,11 +19,11 @@ exports[`UXCaptureStartView destinationVerified renders correct markup when \`de
 exports[`UXCaptureStartView destinationVerified renders correct markup when \`destinationVerified\` is null 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -35,11 +35,11 @@ exports[`UXCaptureStartView destinationVerified renders correct markup when \`de
 exports[`UXCaptureStartView destinationVerified renders correct markup when \`destinationVerified\` is undefined 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -51,11 +51,11 @@ exports[`UXCaptureStartView destinationVerified renders correct markup when \`de
 exports[`UXCaptureStartView destinationVerified renders correct markup when \`destinationVerified\` not supplied 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -69,11 +69,11 @@ exports[`UXCaptureStartView does not render markup when no zones are defined 1`]
 exports[`UXCaptureStartView primaryActionAvailable renders correct markup when \`primaryActionAvailable\` is an empty array 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -85,11 +85,11 @@ exports[`UXCaptureStartView primaryActionAvailable renders correct markup when \
 exports[`UXCaptureStartView primaryActionAvailable renders correct markup when \`primaryActionAvailable\` is null 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -101,11 +101,11 @@ exports[`UXCaptureStartView primaryActionAvailable renders correct markup when \
 exports[`UXCaptureStartView primaryActionAvailable renders correct markup when \`primaryActionAvailable\` is undefined 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -117,11 +117,11 @@ exports[`UXCaptureStartView primaryActionAvailable renders correct markup when \
 exports[`UXCaptureStartView primaryActionAvailable renders correct markup when \`primaryActionAvailable\` not supplied 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -133,11 +133,11 @@ exports[`UXCaptureStartView primaryActionAvailable renders correct markup when \
 exports[`UXCaptureStartView primaryContentDisplayed renders correct markup when \`primaryContentDisplayed\` is an empty array 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -149,11 +149,11 @@ exports[`UXCaptureStartView primaryContentDisplayed renders correct markup when 
 exports[`UXCaptureStartView primaryContentDisplayed renders correct markup when \`primaryContentDisplayed\` is null 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -165,11 +165,11 @@ exports[`UXCaptureStartView primaryContentDisplayed renders correct markup when 
 exports[`UXCaptureStartView primaryContentDisplayed renders correct markup when \`primaryContentDisplayed\` is undefined 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -181,11 +181,11 @@ exports[`UXCaptureStartView primaryContentDisplayed renders correct markup when 
 exports[`UXCaptureStartView primaryContentDisplayed renders correct markup when \`primaryContentDisplayed\` not supplied 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -197,11 +197,11 @@ exports[`UXCaptureStartView primaryContentDisplayed renders correct markup when 
 exports[`UXCaptureStartView renders correct markup when all props are defined 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]},{\\"name\\":\\"ux-secondary-content-displayed\\",\\"marks\\":[\\"ux-secondary-content-1\\",\\"ux-secondary-content-2\\",\\"ux-secondary-content-3\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]},{"name":"ux-secondary-content-displayed","marks":["ux-secondary-content-1","ux-secondary-content-2","ux-secondary-content-3"]}]);
 			}
 		</script>
 	",
@@ -213,11 +213,11 @@ exports[`UXCaptureStartView renders correct markup when all props are defined 1`
 exports[`UXCaptureStartView secondaryContentDisplay renders correct markup when \`secondaryContentDisplayed\` is an empty array 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]}]);
 			}
 		</script>
 	",
@@ -229,11 +229,11 @@ exports[`UXCaptureStartView secondaryContentDisplay renders correct markup when 
 exports[`UXCaptureStartView secondaryContentDisplay renders correct markup when \`secondaryContentDisplayed\` is null 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]}]);
 			}
 		</script>
 	",
@@ -245,11 +245,11 @@ exports[`UXCaptureStartView secondaryContentDisplay renders correct markup when 
 exports[`UXCaptureStartView secondaryContentDisplay renders correct markup when \`secondaryContentDisplayed\` is undefined 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]}]);
 			}
 		</script>
 	",
@@ -261,11 +261,11 @@ exports[`UXCaptureStartView secondaryContentDisplay renders correct markup when 
 exports[`UXCaptureStartView secondaryContentDisplay renders correct markup when \`secondaryContentDisplayed\` not supplied 1`] = `
 <div
   dangerouslySetInnerHTML={
-    Object {
+    {
       "__html": "
 		<script>
 			if(window.UXCapture) {
-				window.UXCapture.startView([{\\"name\\":\\"ux-primary-content-displayed\\",\\"marks\\":[\\"ux-primary-content-1\\",\\"ux-primary-content-2\\"]},{\\"name\\":\\"ux-primary-action-available\\",\\"marks\\":[\\"ux-primary-action-available\\"]}]);
+				window.UXCapture.startView([{"name":"ux-primary-content-displayed","marks":["ux-primary-content-1","ux-primary-content-2"]},{"name":"ux-primary-action-available","marks":["ux-primary-action-available"]}]);
 			}
 		</script>
 	",

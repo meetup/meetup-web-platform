@@ -6,7 +6,7 @@ import { getServer } from 'mwp-test-utils';
 import { plugin as apiProxyPlugin } from './';
 
 jest.mock('mwp-config', () => {
-	const config = require.requireActual('mwp-config');
+	const config = jest.requireActual('mwp-config');
 	config.package = { agent: 'TEST_AGENT ' };
 	return config;
 });
@@ -37,10 +37,7 @@ describe('api proxy plugin', () => {
 		const endpoint = 'foo';
 		const validQuery = { type: 'a', ref: 'b', params: {}, endpoint };
 		const expectedResponse = { foo: 'bar' };
-		require('request').__setMockResponse(
-			null,
-			JSON.stringify(expectedResponse)
-		);
+		require('request').__setMockResponse(null, JSON.stringify(expectedResponse));
 		const queriesRison = rison.encode_array([validQuery]);
 
 		// little helper function to test various matchable proxy URLs

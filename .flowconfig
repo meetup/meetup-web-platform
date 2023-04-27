@@ -1,6 +1,7 @@
 [ignore]
 .*/node_modules/jest-validate/*
 .*/node_modules/protobufjs/*
+.*/node_modules/resolve/*
 .*/build/*
 .*/coverage/*
 

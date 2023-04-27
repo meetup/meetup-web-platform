@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Hapi server startup module for MWP applications",
   "engines": {
-    "node": "^10.22.1",
+    "node": "^14.19.0",
     "yarn": "^1.9.4"
   },
   "main": "./lib/index.js",
@@ -41,7 +41,7 @@
     "mwp-sw-plugin": ">=0.0.1",
     "mwp-tracking-plugin": ">=0.0.1",
     "pino": "4.7.1",
-    "spdy": "3.4.7",
+    "spdy": "4.0.0",
     "uuid": "3.3.2"
   },
   "devDependencies": {}

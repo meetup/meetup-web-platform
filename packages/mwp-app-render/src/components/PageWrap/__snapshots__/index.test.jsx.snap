@@ -5,7 +5,7 @@ exports[`PageWrap renders correct UI elements 1`] = `
   className="column lang_en"
   id="root"
   style={
-    Object {
+    {
       "minHeight": "100vh",
     }
   }
@@ -41,17 +41,17 @@ exports[`PageWrap renders correct UI elements 1`] = `
     key="0/.0"
     localeCode="en-US"
     location={
-      Object {
+      {
         "hash": "",
         "pathname": "/",
         "search": "",
       }
     }
     self={
-      Object {
+      {
         "id": 1243,
         "name": "mocky mcmockerson",
-        "photo": Object {
+        "photo": {
           "photo_link": "http://placekitten.com/g/400/400",
           "thumb_link": "http://placekitten.com/g/200/200",
         },

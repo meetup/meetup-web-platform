@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Redux store management for MWP apps",
   "engines": {
-    "node": "^10.22.1",
+    "node": "^14.19.0",
     "yarn": "^1.9.4"
   },
   "main": "./lib/index.js",
@@ -12,7 +12,7 @@
     "flow": "flow",
     "lint": "eslint . --ext .js,.jsx --fix",
     "test": "yarn run test:unit",
-    "test:unit": "NODE_ENV=test jest --config jest.config.json",
+    "test:unit": "NODE_ENV=test jest --config ../../jest.config.js",
     "test:watch": "yarn test:unit -- --watch"
   },
   "repository": {

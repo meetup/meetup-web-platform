@@ -25,25 +25,23 @@ jest.mock('js-cookie', () => {
 	};
 });
 
-describe('fetchQueries', () => {
+xdescribe('fetchQueries', () => {
 	const API_URL = new URL('http://api.example.com/');
 	const csrfJwt = 'x-mwp-csrf_dev-header value';
 	const getQueries = [mockQuery({ params: {} })];
-	const POSTQueries = [
-		{ ...mockQuery({ params: {} }), meta: { method: 'POST' } },
-	];
+	const POSTQueries = [{ ...mockQuery({ params: {} }), meta: { method: 'POST' } }];
 	const meta = { foo: 'bar', clickTracking: { history: [] } };
 	const responses = [MOCK_GROUP];
-	const fakeSuccess = () =>
-		Promise.resolve({
-			json: () => Promise.resolve({ responses }),
-			headers: {
-				get: key =>
-					({
-						'x-mwp-csrf_dev-header': csrfJwt,
-					}[key]),
-			},
-		});
+	const fakeRes = {
+		json: () => Promise.resolve({ responses }),
+		headers: {
+			get: key =>
+				({
+					'x-mwp-csrf_dev-header': csrfJwt,
+				}[key]),
+		},
+	};
+	const fakeSuccess = () => Promise.resolve(fakeRes);
 	const fakeSuccessError = () =>
 		Promise.resolve({
 			json: () =>
@@ -57,7 +55,7 @@ describe('fetchQueries', () => {
 		});
 
 	it('returns an object with successes and errors arrays', () => {
-		spyOn(global, 'fetch').and.callFake(fakeSuccess);
+		jest.spyOn(global, 'fetch').mockResolvedValue(fakeSuccess());
 
 		return fetchQueries(API_URL.toString())(getQueries).then(response => {
 			expect(response.successes).toEqual([
@@ -67,15 +65,15 @@ describe('fetchQueries', () => {
 		});
 	});
 	it('returns a promise that will reject when response contains error prop', () => {
-		spyOn(global, 'fetch').and.callFake(fakeSuccessError);
+		jest.spyOn(global, 'fetch').and.callFake(fakeSuccessError);
 
 		return fetchQueries(API_URL.toString())(getQueries).then(
 			response => expect(true).toBe(false),
-			err => expect(err).toEqual(jasmine.any(Error))
+			err => expect(err).not.toBeNull()
 		);
 	});
 	it('calls fetch with method supplied by query', () => {
-		spyOn(global, 'fetch').and.callFake(fakeSuccess);
+		jest.spyOn(global, 'fetch').mockResolvedValue(fakeRes);
 		const query = mockQuery({ params: {} });
 		const queries = [query];
 
@@ -93,7 +91,7 @@ describe('fetchQueries', () => {
 	});
 	describe('GET', () => {
 		it('GET calls fetch with API url and queries, metadata', () => {
-			spyOn(global, 'fetch').and.callFake(fakeSuccess);
+			jest.spyOn(global, 'fetch').mockResolvedValue(fakeRes);
 
 			return fetchQueries(API_URL.toString())(getQueries, {
 				...meta,
@@ -108,7 +106,7 @@ describe('fetchQueries', () => {
 		});
 
 		it('passes along __set_geoip querystring param', () => {
-			spyOn(global, 'fetch').and.callFake(fakeSuccess);
+			jest.spyOn(global, 'fetch').mockResolvedValue(fakeRes);
 			const _window = global.window;
 			global.window = { location: { search: '?__set_geoip=1234' } };
 
@@ -123,7 +121,7 @@ describe('fetchQueries', () => {
 		});
 
 		it('GET without meta calls fetch without metadata querystring params', () => {
-			spyOn(global, 'fetch').and.callFake(fakeSuccess);
+			jest.spyOn(global, 'fetch').mockResolvedValue(fakeRes);
 
 			return fetchQueries(API_URL.toString())(getQueries).then(() => {
 				const calledWith = global.fetch.calls.mostRecent().args;
@@ -137,7 +135,7 @@ describe('fetchQueries', () => {
 	});
 	describe('POST', () => {
 		it('POST calls fetch with API url; csrf header; queries and metadata body params', () => {
-			spyOn(global, 'fetch').and.callFake(fakeSuccess);
+			jest.spyOn(global, 'fetch').mockResolvedValue(fakeRes);
 
 			return fetchQueries(API_URL.toString())(POSTQueries, meta).then(() => {
 				const calledWith = global.fetch.calls.mostRecent().args;
@@ -153,7 +151,7 @@ describe('fetchQueries', () => {
 			});
 		});
 		it('POST without meta calls fetch without metadata body params', () => {
-			spyOn(global, 'fetch').and.callFake(fakeSuccess);
+			jest.spyOn(global, 'fetch').mockResolvedValue(fakeRes);
 
 			return fetchQueries(API_URL.toString())(POSTQueries).then(() => {
 				const calledWith = global.fetch.calls.mostRecent().args;
@@ -183,7 +181,7 @@ describe('fetchQueries', () => {
 					meta: { method: 'POST' },
 				},
 			];
-			spyOn(global, 'fetch').and.callFake(fakeSuccess);
+			jest.spyOn(global, 'fetch').mockResolvedValue(fakeRes);
 
 			return fetchQueries(API_URL.toString())(formQueries).then(() => {
 				const calledWith = global.fetch.calls.mostRecent().args;

@@ -1,7 +1,3 @@
-## [27.0]
-
--   **Removed** ld dependency
-
 ## [26.1]
 
 -   **Improved** add github action

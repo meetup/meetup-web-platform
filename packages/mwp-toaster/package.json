@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Toast UI controller for MWP apps",
   "engines": {
-    "node": "^10.22.1",
+    "node": "^14.19.0",
     "yarn": "^1.9.4"
   },
   "main": "./lib/index.js",
@@ -28,7 +28,7 @@
   "peerDependencies": {
     "classnames": "^2.2.6",
     "js-joda": "^1.8.2",
-    "meetup-web-components": "^8.0.2918",
+    "meetup-web-components": "^8.1.244-beta",
     "react": "^16.8.6",
     "react-router-dom": "^4.2.2",
     "react-transition-group": "^2.2.1",

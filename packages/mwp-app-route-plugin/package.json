@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Hapi plugin to activate the wildcard application route",
   "engines": {
-    "node": "^10.22.1",
+    "node": "^14.19.0",
     "yarn": "^1.9.4"
   },
   "main": "./lib/index.js",
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/meetup/meetup-web-platform#readme",
   "dependencies": {
     "electrode-csrf-jwt": "git+https://github.com/meetup/electrode-csrf-jwt.git#793431729d8fb4ee315f28709f323f198b25d460",
+    "launchdarkly-node-server-sdk": "5.9.0",
     "redbox-react": "1.6.0"
   },
   "devDependencies": {},
